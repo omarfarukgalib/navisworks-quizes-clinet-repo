@@ -1,12 +1,17 @@
 
 import { useLoaderData } from 'react-router-dom';
+import HeadSection from '../HeadSection/HeadSection';
 import Quiz from '../Quiz/Quiz';
 
 const Home = () => {
 const quizes = useLoaderData()
     return (
-        <div>
-            <h1>home page:{quizes.data[0].total}</h1>
+      <div className='bg-red-200'>
+        <div className='mt-3'>
+        <HeadSection></HeadSection>
+        </div>
+        <div className='md:flex justify-evenly '>
+            
             {
               quizes.data.map(quiz=><Quiz
               key={quiz.id}
@@ -18,6 +23,9 @@ const quizes = useLoaderData()
             
 
         </div>
+      </div>
+    
+     
     );
 };
 

@@ -1,0 +1,10 @@
+.quiz img{
+    width: 200px;
+}
+.quiz{
+    
+    height: 300px;
+}
+.quiz button:hover{
+    background-color: rosybrown;
+}
