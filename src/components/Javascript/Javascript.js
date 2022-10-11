@@ -1,14 +1,11 @@
 import React from 'react';
 
-
-const Topics = () => {
-   
+const Javascript = () => {
     return (
         <div>
-            
             
         </div>
     );
 };
 
-export default Topics;
+export default Javascript;

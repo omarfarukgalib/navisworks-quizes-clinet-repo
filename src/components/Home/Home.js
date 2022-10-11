@@ -5,6 +5,7 @@ import Quiz from '../Quiz/Quiz';
 
 const Home = () => {
 const quizes = useLoaderData()
+
     return (
       <div className='bg-red-200'>
         <div className='mt-3'>
@@ -16,6 +17,7 @@ const quizes = useLoaderData()
               quizes.data.map(quiz=><Quiz
               key={quiz.id}
               quiz={quiz}
+              
               ></Quiz>)
             }
             

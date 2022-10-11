@@ -3,6 +3,7 @@ import './App.css';
 import Blog from './components/Blog/Blog';
 import Home from './components/Home/Home';
 import Main from './components/Main/Main';
+import NotFound from './components/NotFound/NotFound';
 import Statistics from './components/Statictics/Statistics';
 import Topics from './components/Topics/Topics';
 
@@ -14,13 +15,17 @@ function App() {
       children:[
         {
           path:'/',
+          
           loader:()=>{
             return fetch('quizes.json')
+            
           },
+          
           element:<Home></Home>
         },
         {
-          path:'/topics',
+          path:'/',
+          
           element:<Topics></Topics>
         },
         {
@@ -32,7 +37,13 @@ function App() {
           element:<Blog></Blog>
         }
       ]
+     
+    },
+    {
+      path:'*',
+      element:<NotFound></NotFound>
     }
+    
   ])
   return (
     <div className="App">
