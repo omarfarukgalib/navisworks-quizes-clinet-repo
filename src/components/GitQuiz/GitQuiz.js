@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Git = () => {
+const GitQuiz = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const Git = () => {
     );
 };
 
-export default Git;
+export default GitQuiz;

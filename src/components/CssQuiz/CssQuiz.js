@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Javascript = () => {
+const CssQuiz = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const Javascript = () => {
     );
 };
 
-export default Javascript;
+export default CssQuiz;
