@@ -2,9 +2,9 @@ import React from 'react';
 
 const Blog = () => {
     return (
-        <div className='mt-2 bg-red-200 h-full'>
-            <h1 className='text-4xl'>what is the purpose of react router?</h1>
-            <p className='p-5 text-justify text-2xl'>
+        <div className='mt-1 bg-red-200 h-full font-semibold'>
+            <h1 className=' text-2xl'>what is the purpose of react router?</h1>
+            <p className='p-5 text-justify text-xl'>
             
 
 
@@ -19,18 +19,18 @@ The main difference between Server side routing and client side routing:
 2. In client Side routing along with the entire page, you can serve a specific portion of a page, reuse the DOM, manually manage the URL and history states.
             </p>
 
-            <h1 className='text-4xl'>How does context api work?</h1>
-            <p className='p-5 text-justify text-2xl'>
+            <h1 className='text-2xl'>How does context api work?</h1>
+            <p className='p-5 text-justify text-xl'>
             
             React.createContext() is all you need. It returns a consumer and a provider. Provider is a component that as it's names suggests provides the state to its children. It will hold the "store" and be the parent of all the components that might need that store. Consumer as it so happens is a component that consumes and uses the state.
 
             </p>
-            <h1 className='text-4xl'>what is useRef hook in React js?</h1>
-            <p className='p-5 text-justify text-2xl'>
+            <h1 className='text-2xl'>what is useRef hook in React js?</h1>
+            <p className='p-5 text-justify text-xl'>
             
             Ref means just reference, so it can be a reference to anything (DOM node, Javascript value, etc). The useRef hook returns a mutable object which doesn’t re-render the component when it’s changed. Think it like useState, but unlike useState, doesn’t trigger re-render of the component. The object that useRef returns have a current property that can hold any modifiable value.
 
-            in the first render, the ref’s current property was true, so after first render when useEffect starts, it makes current property false. But if we click one more time, now useEffect can’t change current since it is false, but in the else block, we can run whatever we want. In this way, we can accomplish to use useEffect in every update but not the first time.
+            
 
 
 
