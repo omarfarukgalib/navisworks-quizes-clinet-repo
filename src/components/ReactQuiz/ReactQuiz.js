@@ -28,7 +28,7 @@ const ReactQuiz = () => {
             
             
              <h2 >Quiz 1:  {quiz.data.questions[0].question} 
-           <div className='grid grid-cols-2 gap-3 mt-3 px-52 '>
+           <div className=' md:grid grid-cols-2 gap-3 mt-3 px-52 '>
            <h2 onClick={()=>diffToast(quiz.data.questions[0].options[correctAnswer])}
            className='border-2 border-black rounded-md p-3'>
            <input className='mr-2 ' type="radio" value="Male" name="gender" />
