@@ -57,7 +57,7 @@ const data = [
   ];
     return (
         
-       <div>
+       <div className='bg-red-200'>
              
              <LineChart className='w-full mt-8 mx-auto'
       width={800}

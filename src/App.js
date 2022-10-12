@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+
 import Blog from './components/Blog/Blog';
 import Home from './components/Home/Home';
 import Main from './components/Main/Main';
@@ -11,6 +12,7 @@ import Statistics from './components/Statictics/Statistics';
 
 
 function App() {
+
   const router = createBrowserRouter([
     {
       path:'/',
@@ -50,10 +52,11 @@ function App() {
     }
     
   ])
+  
   return (
     <div className="App">
       <RouterProvider router = {router}></RouterProvider>
-      
+   
     </div>
   );
 }
