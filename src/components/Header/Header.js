@@ -4,7 +4,7 @@ import logo from '../../icons8-navisworks-48.png'
 import './Header.css'
 const Header = () => {
     return (
-     <nav className="flex bg-red-200 justify-between items-center p-3">
+     <nav className="sm:text-center flex bg-red-200 justify-between items-center p-3">
      
      <div className='flex items-center text-3xl'>
         <img src={logo} alt="" />

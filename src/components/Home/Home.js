@@ -11,7 +11,7 @@ const quizes = useLoaderData()
         <div className='mt-3'>
         <HeadSection></HeadSection>
         </div>
-        <div className='md:flex justify-evenly '>
+        <div className=' md:flex gap-3 justify-evenly'>
             
             {
               quizes.data.map(quiz=><Quiz

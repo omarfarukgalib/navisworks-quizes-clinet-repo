@@ -3,6 +3,8 @@ import './App.css';
 
 import Blog from './components/Blog/Blog';
 import Home from './components/Home/Home';
+
+
 import Main from './components/Main/Main';
 import NotFound from './components/NotFound/NotFound';
 import ReactQuiz from './components/ReactQuiz/ReactQuiz';
@@ -32,8 +34,10 @@ function App() {
           loader:({params})=>{
             return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`)
           },
-          element:<ReactQuiz></ReactQuiz>
+          element:<ReactQuiz></ReactQuiz>,
+          
        },
+      
        
         {
           path:'/statistics',
